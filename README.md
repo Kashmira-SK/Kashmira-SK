@@ -1,9 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,25&height=200&section=header&text=Kash&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
-</p>
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=20&pause=1000&color=BD93F9&center=true&vCenter=true&width=600&lines=building+things%2C+breaking+things;committing+crimes+against+my+dotfiles;sudo+make+me+a+coffee;arch+linux+user+(btw)" />
+  <img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/main/assets/banner.svg" width="100%" />
 </p>
 
 ```
@@ -18,16 +14,18 @@ Status   : building things, breaking things (づ｡◕‿‿◕｡)づ
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/output/github-contribution-grid-snake-dark.svg" />
+  <i>it works on my machine, which is the only machine that matters</i>
 </p>
 
 ---
 
-**shipping right now:**
-`TerminalChat` — TUI companion chat app (Textual + Cerebras API)
-`TicketApp` — event booking system (React + Express + Prisma + Stripe)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/output/github-contribution-grid-snake-dark.svg" />
+</p>
 
----
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kashmira-SK&theme=dracula&hide_border=true&area=true" />
+</p>
 
 <p align="center">
   <i>🐙 git blame myself</i>
