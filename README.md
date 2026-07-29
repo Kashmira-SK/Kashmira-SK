@@ -1,36 +1,28 @@
-<div align="center">
-
-<img src="./assets/header.svg" width="100%" />
-
-</div>
-
-<br>
-
-```text
+```
 kash@arch
-──────────────
-
-OS      Arch Linux
-WM      Hyprland
-Shell   zsh + starship
-Editor  neovim
-Terminal kitty
+---------
+OS       : Arch Linux x86_64
+WM       : Hyprland (Caelestia/Quickshell rice)
+Shell    : zsh + starship
+Terminal : kitty
+Editor   : neovim (btw)
+Status   : building things, breaking things (づ｡◕‿‿◕｡)づ
 ```
 
-<br>
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/output/github-contribution-grid-snake-dark.svg"/>
+  <i>it works on my machine, which is the only machine that matters</i>
 </p>
 
-<br>
+---
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kashmira-SK&theme=tokyo-night&hide_border=true&area=true"/>
+  <img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/output/github-contribution-grid-snake-dark.svg" />
 </p>
 
-<div align="center">
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kashmira-SK&theme=dracula&hide_border=true&area=true" />
+</p>
 
-`> session complete_`
-
-</div>
+<p align="center">
+  <i>🐙 git blame myself</i>
+</p>
