@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/main/assets/banner.svg" width="100%" />
+</p>
+
 ```
 kash@arch
 ---------
