@@ -1,4 +1,4 @@
-<svg width="900" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="560" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <linearGradient id="bg" x2="1" y2="1">
     <stop stop-color="#050505"/>
@@ -20,10 +20,10 @@ opacity="0.25"/>
 </filter>
 </defs>
 <!-- background -->
-<rect width="900" height="300" fill="url(#bg)"/>
+<rect width="900" height="560" fill="url(#bg)"/>
 <!-- subtle grid -->
 <rect width="900"
-height="300"
+height="560"
 fill="url(#grid)"/>
 <!-- broken scan fragments -->
 <g stroke="#3f3f46" opacity="0.35">
@@ -149,5 +149,26 @@ waiting_for_input_
 values="0.3;1;0.3"
 dur="4s"
 repeatCount="indefinite"/>
+</text>
+
+<!-- divider -->
+<line x1="150" y1="300" x2="750" y2="300" stroke="#27272a"/>
+
+<!-- system info panel -->
+<g font-family="monospace" font-size="15">
+  <text x="220" y="335" fill="#71717a">OS      </text><text x="330" y="335" fill="#e4e4e7">: Arch Linux x86_64</text>
+  <text x="220" y="360" fill="#71717a">WM      </text><text x="330" y="360" fill="#e4e4e7">: Hyprland (Caelestia/Quickshell rice)</text>
+  <text x="220" y="385" fill="#71717a">Shell   </text><text x="330" y="385" fill="#e4e4e7">: zsh + starship</text>
+  <text x="220" y="410" fill="#71717a">Terminal</text><text x="330" y="410" fill="#e4e4e7">: kitty</text>
+  <text x="220" y="435" fill="#71717a">Editor  </text><text x="330" y="435" fill="#e4e4e7">: neovim (btw)</text>
+  <text x="220" y="460" fill="#71717a">Status  </text><text x="330" y="460" fill="#e4e4e7">: building things, breaking things (づ｡◕‿‿◕｡)づ</text>
+</g>
+
+<!-- divider -->
+<line x1="150" y1="495" x2="750" y2="495" stroke="#27272a"/>
+
+<!-- closing line -->
+<text x="450" y="530" text-anchor="middle" font-family="monospace" font-size="14" font-style="italic" fill="#a1a1aa">
+  it works on my machine, which is the only machine that matters
 </text>
 </svg>
