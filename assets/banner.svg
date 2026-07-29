@@ -1,72 +1,153 @@
-<svg width="900" height="150" viewBox="0 0 900 150" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <clipPath id="screen">
-      <rect x="0" y="0" width="900" height="150"/>
-    </clipPath>
-  </defs>
-
-  <rect width="900" height="150" fill="#0b0b0d"/>
-  <rect x="10" y="10" width="880" height="130" fill="none" stroke="#26262b" stroke-width="1"/>
-
-  <g clip-path="url(#screen)">
-    <!-- prompt -->
-    <text x="40" y="60" font-family="'Courier New', monospace" font-size="22" fill="#7d7d85">~$</text>
-
-    <!-- typed command, per-letter reveal -->
-    <g font-family="'Courier New', monospace" font-size="22" fill="#d6d6da">
-      <text x="74"  y="60">w<animate attributeName="opacity" values="0;1" begin="0.2s" dur="0.05s" fill="freeze"/></text>
-      <text x="88"  y="60">h<animate attributeName="opacity" values="0;1" begin="0.3s" dur="0.05s" fill="freeze"/></text>
-      <text x="102" y="60">o<animate attributeName="opacity" values="0;1" begin="0.4s" dur="0.05s" fill="freeze"/></text>
-      <text x="116" y="60">a<animate attributeName="opacity" values="0;1" begin="0.5s" dur="0.05s" fill="freeze"/></text>
-      <text x="130" y="60">m<animate attributeName="opacity" values="0;1" begin="0.6s" dur="0.05s" fill="freeze"/></text>
-      <text x="146" y="60">i<animate attributeName="opacity" values="0;1" begin="0.7s" dur="0.05s" fill="freeze"/></text>
-    </g>
-
-    <!-- typing cursor -->
-    <rect y="43" width="10" height="22" fill="#d6d6da">
-      <animate attributeName="x" values="74;88;102;116;130;146;158;158" keyTimes="0;0.14;0.28;0.42;0.56;0.70;0.85;1" begin="0.2s" dur="0.9s" fill="freeze"/>
-      <animate attributeName="opacity" values="1;0;1;0;1;0;1;0;1;0" dur="1s" begin="1.1s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- answer: RGB-split glitch, appears at 1.25s -->
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;1" begin="1.25s" dur="0.01s" fill="freeze"/>
-
-      <!-- cyan ghost layer -->
-      <text x="40" y="105" font-family="'Courier New', monospace" font-weight="bold" font-size="42" fill="#2be8ff">
-        Kash
-        <animate attributeName="x" values="40;40;33;40;40;46;40;40;40;36;40;40"
-          keyTimes="0;0.05;0.08;0.12;0.4;0.44;0.48;0.7;0.74;0.78;0.82;1"
-          begin="1.25s" dur="4s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.85;0.85;0.3;0.85;0.85;0.3;0.85"
-          keyTimes="0;0.05;0.08;0.4;0.44;0.7;1"
-          begin="1.25s" dur="4s" repeatCount="indefinite"/>
-      </text>
-
-      <!-- red ghost layer -->
-      <text x="40" y="105" font-family="'Courier New', monospace" font-weight="bold" font-size="42" fill="#ff2b4e">
-        Kash
-        <animate attributeName="x" values="40;40;47;40;40;34;40;40;40;44;40;40"
-          keyTimes="0;0.05;0.08;0.12;0.4;0.44;0.48;0.7;0.74;0.78;0.82;1"
-          begin="1.25s" dur="4s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.85;0.85;0.3;0.85;0.85;0.3;0.85"
-          keyTimes="0;0.05;0.08;0.4;0.44;0.7;1"
-          begin="1.25s" dur="4s" repeatCount="indefinite"/>
-      </text>
-
-      <!-- main white text on top -->
-      <text x="40" y="105" font-family="'Courier New', monospace" font-weight="bold" font-size="42" fill="#f2f2f4">
-        Kash
-        <animate attributeName="x" values="40;40;38;40;40;42;40"
-          keyTimes="0;0.05;0.08;0.12;0.4;0.44;1"
-          begin="1.25s" dur="4s" repeatCount="indefinite"/>
-      </text>
-    </g>
-
-    <!-- occasional horizontal glitch slice -->
-    <rect x="0" y="0" width="900" height="6" fill="#0b0b0d" opacity="0">
-      <animate attributeName="y" values="70;70;95;95;70" keyTimes="0;0.42;0.43;0.46;1" begin="1.25s" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.41;0.42;0.45;0.46;1" begin="1.25s" dur="4s" repeatCount="indefinite"/>
-    </rect>
-  </g>
+<svg width="900" height="300" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="bg" x2="1" y2="1">
+    <stop stop-color="#050505"/>
+    <stop offset="0.5" stop-color="#0b0b0e"/>
+    <stop offset="1" stop-color="#030303"/>
+</linearGradient>
+<pattern id="grid"
+width="40"
+height="40"
+patternUnits="userSpaceOnUse">
+<path d="M40 0H0V40"
+fill="none"
+stroke="#27272a"
+stroke-width="1"
+opacity="0.25"/>
+</pattern>
+<filter id="glitchBlur">
+    <feGaussianBlur stdDeviation="1"/>
+</filter>
+</defs>
+<!-- background -->
+<rect width="900" height="300" fill="url(#bg)"/>
+<!-- subtle grid -->
+<rect width="900"
+height="300"
+fill="url(#grid)"/>
+<!-- broken scan fragments -->
+<g stroke="#3f3f46" opacity="0.35">
+<line x1="80" y1="90" x2="220" y2="90"/>
+<line x1="680" y1="210" x2="840" y2="210"/>
+</g>
+<!-- system axis -->
+<line x1="100"
+y1="150"
+x2="800"
+y2="150"
+stroke="#27272a"/>
+<line x1="450"
+y1="40"
+x2="450"
+y2="260"
+stroke="#27272a"
+stroke-dasharray="4 12"/>
+<!-- glitch copies -->
+<text x="450"
+y="135"
+text-anchor="middle"
+font-family="monospace"
+font-size="58"
+letter-spacing="18"
+fill="#ef4444"
+opacity="0.35">
+KASH
+<animate attributeName="x"
+values="450;446;450;453;450"
+dur="3s"
+repeatCount="indefinite"/>
+</text>
+<text x="450"
+y="135"
+text-anchor="middle"
+font-family="monospace"
+font-size="58"
+letter-spacing="18"
+fill="#22d3ee"
+opacity="0.35">
+KASH
+<animate attributeName="x"
+values="450;454;450;447;450"
+dur="2.7s"
+repeatCount="indefinite"/>
+</text>
+<!-- main text -->
+<text x="450"
+y="135"
+text-anchor="middle"
+font-family="monospace"
+font-size="58"
+letter-spacing="18"
+fill="#e4e4e7">
+KASH
+<animate attributeName="opacity"
+values="1;1;0.85;1"
+dur="5s"
+repeatCount="indefinite"/>
+</text>
+<!-- metadata -->
+<text x="450"
+y="180"
+text-anchor="middle"
+font-family="monospace"
+font-size="13"
+fill="#71717a">
+ARCH // HYPRLAND // SESSION ACTIVE
+<animate attributeName="opacity"
+values="0.5;1;0.5"
+dur="6s"
+repeatCount="indefinite"/>
+</text>
+<!-- orbit dots -->
+<g>
+<circle cx="450" cy="80" r="7" fill="#e4e4e7" opacity="0.15"/>
+<circle cx="450" cy="80" r="4.5" fill="#e4e4e7"/>
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0 450 150"
+to="360 450 150"
+dur="12s"
+repeatCount="indefinite"/>
+</g>
+<g>
+<circle cx="450" cy="220" r="5.5" fill="#a1a1aa" opacity="0.15"/>
+<circle cx="450" cy="220" r="3.5" fill="#a1a1aa"/>
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="360 450 150"
+to="0 450 150"
+dur="18s"
+repeatCount="indefinite"/>
+</g>
+<!-- glitch bars -->
+<rect x="300"
+y="120"
+width="300"
+height="3"
+fill="#e4e4e7"
+opacity="0">
+<animate attributeName="opacity"
+values="0;0;0.3;0;0"
+dur="4s"
+repeatCount="indefinite"/>
+<animate attributeName="x"
+values="300;360;280;300"
+dur="4s"
+repeatCount="indefinite"/>
+</rect>
+<!-- status -->
+<text x="450"
+y="235"
+text-anchor="middle"
+font-family="monospace"
+font-size="12"
+fill="#52525b">
+waiting_for_input_
+<animate attributeName="opacity"
+values="0.3;1;0.3"
+dur="4s"
+repeatCount="indefinite"/>
+</text>
 </svg>
