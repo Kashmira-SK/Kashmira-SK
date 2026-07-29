@@ -1,109 +1,36 @@
 <div align="center">
 
-```text
-██╗  ██╗ █████╗ ███████╗██╗  ██╗
-██║ ██╔╝██╔══██╗██╔════╝██║  ██║
-█████╔╝ ███████║███████╗███████║
-██╔═██╗ ██╔══██║╚════██║██╔══██║
-██║  ██╗██║  ██║███████║██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
-```
-
-```
-> booting profile...
-> loading modules...
-> warning: sanity not found
-> welcome.
-```
-
-<i>"it works on my machine."</i>
+<img src="./assets/header.svg" width="100%" />
 
 </div>
 
----
-
-## ~/whoami
+<br>
 
 ```text
 kash@arch
-────────────────────────────────────
+──────────────
 
-OS       :: Arch Linux x86_64
-WM       :: Hyprland
-Rice     :: Caelestia / Quickshell
-Shell    :: zsh + starship
-Editor   :: neovim btw
-Terminal :: kitty
-
-Status   :: building things
-            breaking things
-
-Current mood :: segmentation fault
+OS      Arch Linux
+WM      Hyprland
+Shell   zsh + starship
+Editor  neovim
+Terminal kitty
 ```
 
----
+<br>
 
-## ./skills --list
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/output/github-contribution-grid-snake-dark.svg"/>
+</p>
 
-```text
-languages/
-├── python
-├── java
-├── cpp
-└── javascript
+<br>
 
-linux/
-├── hyprland
-├── shell scripting
-├── neovim
-└── dotfiles
-
-currently/
-└── making my desktop increasingly unusable
-```
-
----
-
-## uptime
-
-```text
-$ git status
-
-On branch main
-
-Changes not staged for commit:
-    life
-
-nothing to commit
-working tree questionable
-```
-
----
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Kashmira-SK&theme=tokyo-night&hide_border=true&area=true"/>
+</p>
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/output/github-contribution-grid-snake-dark.svg"/>
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Kashmira-SK&theme=tokyo-night&hide_border=true&area=true"/>
-
-</div>
-
----
-
-```diff
-+ compiling ideas...
-- sleep
-! TODO: document things before forgetting how they work
-```
-
-<div align="center">
-
-`🐙 git blame myself`
+`> session complete_`
 
 </div>
