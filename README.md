@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/main/assets/banner.svg?v=4" width="100%" />
+  <img src="https://raw.githubusercontent.com/Kashmira-SK/Kashmira-SK/main/assets/banner-v2.svg" width="100%" />
 </p>
 
 <p align="center">
